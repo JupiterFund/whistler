@@ -3,6 +3,8 @@ services:
   whistler:
     image: jupiterfund/whistler
     working_dir: /app
+    extra_hosts:
+      - "kafka:10.10.0.10"
     expose:
       - "9090"
   envoy:

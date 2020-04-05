@@ -22,7 +22,7 @@ COPY . .
 
 FROM $base_image
 
-COPY --from=build /usr/src/app/* /app/
+COPY --from=build /usr/src/app/ /app/
 WORKDIR /app
 
 EXPOSE 9090
