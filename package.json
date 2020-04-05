@@ -1,0 +1,20 @@
+{
+  "name": "whistler",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^0.7.2",
+    "@grpc/proto-loader": "^0.5.3",
+    "jupiterapis": "github:jupiterfund/jupiterapis",
+    "kafkajs": "^1.12.0",
+    "rxjs": "^6.5.4",
+    "rxjs-stream": "^3.2.1"
+  }
+}

@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+  whistler:
+    image: jupiterfund/whistler
+    working_dir: /app
+    expose:
+      - "9090"
+  envoy:
+    image: envoyproxy/envoy:v1.13.1
+    volumes:
+      - ./envoy:/etc/envoy
+    command: /usr/local/bin/envoy -c /etc/envoy/envoy.yaml
+    expose:
+      - "8443"
+      - "8080"
+    ports:
+      - "8443:8443"
+      - "8080:8080"
