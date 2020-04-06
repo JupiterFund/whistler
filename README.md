@@ -1,13 +1,7 @@
 # Whistler
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/jupiterfund/whistler.svg)](https://hub.docker.com/r/jupiterfund/whistler/)
 
-### Gernerate SSL Certificate
+### 导入SSL证书
 
-```
-# Run this command under ./envoy/keys directory
-openssl req -newkey rsa:2048 -x509 -nodes -keyout server.key -new -out server.crt -config req.cnf -sha256 -days 3650
-```
-
-### Import certificate into the browser
-
-Download `server.cer` and import it into the browser as `Trusted Root Certification Authorities`
+下载 [server.cer](https://github.com/JupiterFund/whistler/blob/master/envoy/keys/server.cer) 并导入浏览器的 `Trusted Root Certification Authorities` 列表中
